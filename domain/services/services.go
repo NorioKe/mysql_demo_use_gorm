@@ -1,10 +1,10 @@
 package services
 
-import "mysql_demo_use_gorm/domain/repositories"
+import "github.com/NorioKe/mysql_demo_use_gorm/domain/repositories"
 
 type ConsumptionService struct {
 	userRepo  repositories.UserRepository
-	orderRepo repositories.UserRepository
+	orderRepo repositories.OrderRepository
 }
 
 func NewConsumptionService(ur repositories.UserRepository, or repositories.OrderRepository) *ConsumptionService {

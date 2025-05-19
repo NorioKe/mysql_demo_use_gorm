@@ -1,8 +1,8 @@
 package repositories
 
 import (
-	"mysql_demo_use_gorm/domain/models"
-	// "github.com/your-project/domain/models"
+	// "mysql_demo_use_gorm/domain/models"
+	"github.com/NorioKe/mysql_demo_use_gorm/domain/models"
 )
 
 // OrderRepository 订单实体的数据访问契约

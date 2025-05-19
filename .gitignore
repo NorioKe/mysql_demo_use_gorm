@@ -1,0 +1,19 @@
+# 基础配置
+*.exe         # 排除所有可执行文件
+*.test        # 排除测试二进制文件
+/bin/         # 排除编译输出目录
+/tmp/         # 排除临时文件目录
+
+# Go项目特殊配置
+*.so          # C动态库
+*.dll         # Windows动态链接库
+*.out         # Go编译输出文件
+vendor/       # 依赖目录（若未使用模块化开发）
+
+# IDE配置
+.idea/        # JetBrains IDE配置
+.vscode/      # VS Code配置
+
+# 系统文件
+.DS_Store     # macOS系统文件
+Thumbs.db     # Windows缩略图缓存

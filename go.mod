@@ -4,7 +4,7 @@ go 1.23.0
 
 // replace github.com/NorioKe/mysql_demo_use_gorm => ../mysql_demo_use_gorm
 
-// require github.com/NorioKe/mysql_demo_use_gorm v0.0.0-00010101000000-000000000000
+require github.com/NorioKe/mysql_demo_use_gorm v1.0.1
 
 require (
 	github.com/golang/mock v1.6.0

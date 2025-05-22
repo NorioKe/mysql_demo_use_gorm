@@ -10,6 +10,29 @@
 
 gorm库的中文文档：https://gorm.io/zh_CN/docs/
 
+另附本demo涉及的两个表：
+```sql
+Create Table: CREATE TABLE `users` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `total_consumption` decimal(12,2) NOT NULL DEFAULT '0.00' COMMENT '用户消费总额',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `idx_users_email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1
+
+Create Table: CREATE TABLE `orders` (
+  `order_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `user_id` bigint(20) unsigned NOT NULL COMMENT '关联users.id',
+  `amount` decimal(12,2) NOT NULL COMMENT '订单金额',
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `is_valid` tinyint(1) NOT NULL DEFAULT '1' COMMENT '有效性标识(0:无效 1:有效)',
+  PRIMARY KEY (`order_id`),
+  KEY `idx_user_id` (`user_id`),
+  CONSTRAINT `fk_user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1
+```
+
 ## 更新日志
 
 ### v1

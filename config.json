@@ -1,0 +1,11 @@
+{
+    "database": {
+        "host": "localhost",
+        "port": 3306,
+        "user": "gouser",
+        "password": "StrongPass123!",
+        "dbname": "go_dev",
+        "charset": "utf8mb4",
+        "parseTime": true
+    }
+}

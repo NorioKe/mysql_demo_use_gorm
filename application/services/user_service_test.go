@@ -3,8 +3,9 @@ package services_test
 import (
 	"errors"
 	"fmt"
-	"mysql_demo_use_gorm/application/services"
 	"testing"
+
+	"github.com/NorioKe/mysql_demo_use_gorm/application/services"
 
 	"github.com/NorioKe/mysql_demo_use_gorm/domain/models"
 	"github.com/NorioKe/mysql_demo_use_gorm/domain/repositories"

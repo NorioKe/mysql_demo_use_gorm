@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 	"log"
-	"mysql_demo_use_gorm/application/services"
+
+	"github.com/NorioKe/mysql_demo_use_gorm/application/services"
 
 	"github.com/NorioKe/mysql_demo_use_gorm/infrastructure/db"
 

@@ -2,9 +2,10 @@ package services_test
 
 import (
 	"errors"
-	"mysql_demo_use_gorm/application/services"
-	"mysql_demo_use_gorm/domain/repositories"
 	"testing"
+
+	"github.com/NorioKe/mysql_demo_use_gorm/application/services"
+	"github.com/NorioKe/mysql_demo_use_gorm/domain/repositories"
 
 	"github.com/NorioKe/mysql_demo_use_gorm/domain/models"
 	"github.com/NorioKe/mysql_demo_use_gorm/interfaces/mocks"
